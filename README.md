@@ -49,9 +49,9 @@ Demonstrate the ability to run a Jenkins build and manually deploy to Elastic Be
 ### 5. Manually deploy to Elastic Beanstalk
 
 - Deploy the zip file to Elastic Beanstalk
-![alt text](https://github.com/andmulLABS01/Deployment_2AM/blob/main/dp2_error.PNG)
+![alt text](https://github.com/andmulLABS01/Deployment_2AM/blob/main/ELB_status-2a.PNG)
 
-![alt text](https://github.com/andmulLABS01/Deployment_2AM/blob/main/dp2_error.PNG)
+![alt text](https://github.com/andmulLABS01/Deployment_2AM/blob/main/ELB_status-2b.PNG)
 
 ## System Diagram:
 
@@ -60,6 +60,7 @@ To view the diagram of the system design/deployment pipeline, click [HERE](https
 ## Issues/Troubleshooting:
 
 Jenkins could not move to the test phase of the Jenkinsfile
+![alt text](https://github.com/andmulLABS01/Deployment_2AM/blob/main/dp2_error.PNG)
 
 Resolution Steps:
 - Check the Console Output in Jenkins
@@ -72,9 +73,6 @@ Resolution Steps:
 - Rerun Jenkins build and was successful 
 
 
-![alt text](https://github.com/andmulLABS01/Deployment_2AM/blob/main/dp2_error.PNG)
-
-
 ## Conclusion:
 
-There are some optimizations that can be made to this deployment.  One can be automating the creation of the Jenkins server.  Many advancements are created in response to issues that the current generation of technology faces. The use of Virtual Machines was a large improvement over hosting applications on dedicated physical machines. It solved many problems but also had several of its own. Containerization created lighter, more portable, and more reliable applications by removing configuration drift from the equation. Many companies would benefit from containerization but as time progresses, more people utilize it, and more issues are found, I'm sure that eventually technology will evolve again and an even more efficient system will take its place.
+There are some optimizations that can be made to this deployment.  One can automate the creation of the Jenkins server and export the created zip file.  The creation of the Jenkins server could be done using a Bash script on the server or using a -curl command to pull in the bash file from a Git repository.   
