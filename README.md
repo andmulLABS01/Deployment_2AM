@@ -1,7 +1,7 @@
 
 <h1 align="center">Jenkins_Deployment-2<h1> 
 
-# Jenkins Deployment 2
+# Deployment 2
 August 26, 2023
 
 By: Andrew Mullen
